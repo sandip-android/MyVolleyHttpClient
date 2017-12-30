@@ -47,6 +47,6 @@ public class MainActivity extends AppCompatActivity {
         headers.put("Content-Type", "application/json");
         httpRequest.addHeaders(headers);
         httpRequest.setRequestQueue(MyApplication.getInstance().getRequestQueue());
-        httpRequest.execute("https://www.homebethe.com/ios_webservices/appconfig.php");
+        httpRequest.execute("http://google.com/test_url");
     }
 }
