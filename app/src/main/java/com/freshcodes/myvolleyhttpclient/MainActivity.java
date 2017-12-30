@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         JSONObject jsonObject = new JSONObject();
         HttpRequest httpRequest = new HttpRequest(MainActivity.this, HttpRequest.POST, jsonObject.toString(), "APP_CONFIG", new HttpRequestListener() {
             @Override
-            public void onRequestStarted() {
+            public void onRequestStarted(String WSType) {
 
             }
 

@@ -63,7 +63,7 @@ public class HttpRequest {
     }
 
     public void execute(String url) {
-        httpRequestListener.onRequestStarted();
+        httpRequestListener.onRequestStarted(WSName);
         try {
             if (URLUtil.isValidUrl(url)) {
                 int reqMethod = Request.Method.GET;
